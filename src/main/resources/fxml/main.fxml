@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright 2016 Chris Caspanello
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="300.0" minWidth="600.0" prefHeight="300.0" prefWidth="510.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.ccaspanello.gui.logging.HelloWorldController">
+   <children>
+      <TextArea fx:id="txtConsole" layoutX="14.0" layoutY="186.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="72.0" />
+      <Label layoutX="14.0" layoutY="55.0" text="Console" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="55.0" />
+      <HBox alignment="CENTER" layoutX="6.0" layoutY="61.0" prefHeight="26.0" prefWidth="481.0" spacing="7.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#trace" prefHeight="25.0" prefWidth="75.0" text="Trace" />
+            <Button mnemonicParsing="false" onAction="#info" prefHeight="25.0" prefWidth="75.0" text="Info" />
+            <Button mnemonicParsing="false" onAction="#warn" prefHeight="25.0" prefWidth="75.0" text="Warn" />
+            <Button mnemonicParsing="false" onAction="#debug" prefHeight="25.0" prefWidth="75.0" text="Debug" />
+            <Button mnemonicParsing="false" onAction="#error" prefHeight="25.0" prefWidth="75.0" text="Error" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
